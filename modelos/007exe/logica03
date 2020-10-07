@@ -1,0 +1,20 @@
+programa
+{
+	inclua biblioteca Texto --> t
+	funcao inicio()
+	{
+		cadeia cid
+		escreva("\nEm que cidade você mora? ")
+		leia(cid)
+
+		cadeia grande = t.caixa_alta(cid)
+		inteiro tam = t.numero_caracteres(cid)
+		
+          escreva("\n ----- ANALISANDO ----- \n")
+		escreva("\n Você mora na cidade: " + grande)
+		escreva("\n A primeira letra é: " + t.obter_caracter(grande, 0))
+		escreva("\n E contém " + tam + " letras.\n")
+		
+	}
+}
+

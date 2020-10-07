@@ -1,0 +1,18 @@
+programa
+{
+	inclua biblioteca Texto --> t
+	funcao inicio()
+	{
+		cadeia nome
+		escreva("\nDigite seu nome completo: ")
+		leia(nome)
+
+		inteiro pos = t.posicao_texto(" " , nome, 0)
+		cadeia pnome = t.extrair_subtexto(nome, 0, pos)
+
+		escreva("\n ----- ANALISANDO ----- \n")
+		escreva("\n Seu primeiro nome é: " + t.caixa_alta(pnome))
+		escreva("\n")
+		
+	}
+}

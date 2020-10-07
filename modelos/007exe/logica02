@@ -1,0 +1,20 @@
+programa
+{
+	inclua biblioteca Tipos --> t
+	funcao inicio()
+	{
+		real n1, n2, r
+		escreva(" Informe o 1° número ")
+		leia(n1)
+		escreva(" Informe o 2° número ")
+		leia(n2)
+          escreva(" \n--- RESULTADOS --- \n")
+          escreva("\n SOMA = "+ (n1+n2))
+          escreva("\n DIFERENÇA = "+ (n1-n2))
+          escreva("\n PRODUTO = "+ (n1*n2))
+          escreva("\n QUOCIENTE INTEIRO = " + t.real_para_inteiro((n1)/n2))
+          escreva("\n QUOCIENTE REAL = "+ (n1/n2))
+          escreva("\n RESTO DA DIVISÃO ="+ t.real_para_inteiro(n1) % t.real_para_inteiro(n2))
+	
+	}
+}

@@ -1,0 +1,15 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n, ant, suc
+		escreva(" Favor, informar um número interiro? ")
+		leia(n)
+          ant = n - 1
+          suc = n + 1
+          escreva(" O antecessor de " + n + " é o valor " + ant + "\n")
+          escreva(" O sucessor de " + n + " é o valor " + suc + "")
+           
+	}
+}

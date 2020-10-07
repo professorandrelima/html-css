@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa22</title>
+</head>
+<body>
+    <form action="cadastro.php" method="GET" oninput="imed.value = 
+    (Number(inota01.value) + Number(inota02.value))/2">
+        <p><label for="inome">Seu nome:</label>
+        <input type="text" name="nome" id="inome"></p>
+        <p><label for="inota01">Nota 01: </label>
+        <input type="number" step="0.1" name="nota01" id="inota01"></p>
+        <p><label for="inota02">Nota 02: </label>
+        <input type="number" name="nota02" id="inota02"></p>
+        <p><label for="imed">Média: </label>
+        <output name="med" id="imed">0</output></p>
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+</html>
