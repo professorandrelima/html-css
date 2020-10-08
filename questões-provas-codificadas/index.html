@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+</head>
+<body>
+    <form id="fContato" action="" method="POST">
+        
+       <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+            <p><label for="cNome">Nome:</label>
+                <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="nome completo"></p>
+            <p><label for="cSenha">Senha:</label> 
+                <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></p> 
+            <p><label for="cEmail">E-mail:</label> 
+                <input type="email" name="tEmail" id="cEmail" size="20" maxlength="40"></p>
+            <fieldset id="sexo"><legend>Sexo</legend>
+               <input type="radio" name="tSexo" id="cMasc">
+               <label for="cMasc">Masculino</label><br>
+               <input type="radio" name="tSexo" id="cFem">
+               <label for="cFem">Feminino</label>
+            </fieldset>
+            <p><label for="cNasc"></label> Data de Nascimento:<input type="date" name="tNasc" id="cNasc"></p>   
+        </fieldset> 
+
+        <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+            <p><label for="cRua"></label> Logradouro:
+                <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ...">
+            </p>
+            <p><label for=""></label> Número:
+                <input type="number" name="tNum" id="cNum" min="0" max="99999">
+            </p>
+            
+            <p><label for="cEst"></label> Estado:
+                <select name="tEst" id="cEst">
+                   <optgroup label="Região Sudeste">
+                        <option value="RJ">Rio de janeiro</option>
+                        <option value="SP" selected>São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                   </optgroup>
+                   <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                   </optgroup> 
+                </select>
+            </p>
+            <p>
+                <label for="cCid">Cidade:</label> 
+                <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua cidade" list="cidades">
+            </p>
+            <datalist id="cidades">
+                <option value="Rio de janeiro"></option>
+                <option value="Nova Iguaçu"></option>
+                <option value="Niteroi"></option>
+                <option value="Belford Roxo"></option>
+            </datalist>
+        </fieldset>
+        
+        <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+            <p><label for="cUrg">Grau de Urgência:</label> 
+                Mín <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2" maxlength="4" value="2">Max
+            </p>
+           
+            <p><label for="cMsg">Mensagem:</label> 
+                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset id="pedido"><legend>Quero um Video Game</legend>
+            <p>
+                <input type="checkbox" name="tPed" id="cPed">
+                <label for="cPed"></label> Gostaria de adquirir seu Vídeo Game quando disponível</p>
+            <p>
+                <input type="color" name="tCor" id="cCor" value="#0000FF">
+                <label for="cCor"></label> Cor:</p>
+            <p>
+                <label for="cQtd"></label> Quantidade:</p>
+                <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0">
+            <p>
+                <label for="cTot"></label> Preço Total: R$</p>
+                <input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly>
+        </fieldset>
+        <input type="image" name="tEnviar" src="img/btenviar.png">
+    </form>
+</body>
+</html>
