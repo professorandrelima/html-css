@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+}
+header{
+    background-color: white;
+    padding: 10px;
+}
+nav{
+    background-color: rgb(124, 122, 122);
+    padding: 3px;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.493);
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 40px;
+    
+}
+article{
+    background-color: lightgrey;
+}
+
+article > aside{
+    background-color: rgb(172, 171, 171);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+}
